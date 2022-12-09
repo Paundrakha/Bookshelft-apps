@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+    <header class="head-book">
+        <h1><i class="fas fa-book-open"></i>Bookshelf Apps</h1>
+    </header>
+    <main>
+        <section class="input-sesi">
+            <h2>Add a new book</h2>
+            <form id="inputBook">
+                <div class="input">
+                    <label for="title">Title</label>
+                    <input id="title" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="author">Author</label>
+                    <input id="author" type="text" required>
+                </div>
+                <div class="input">
+                    <label for="year">Year</label>
+                    <input id="year" type="number" required>
+                </div>
+                <div class="input-check">
+                    <label for="inputCheckbox" id="inputCentang">Already read</label>
+                    <input  id="inputCheckbox"  type="checkbox">
+                </div>
+                <button id="submit" type="submit">Add book </button>
+            </form>
+        </section>
+
+        <section class="book-shelf">
+            <h2>Unread</h2>
+           
+            <div id="unread" class="book-list"></div>
+        </section>
+
+        <section class="book-shelf">
+            <h2>Already read</h2>
+           
+            <div id="read" class="book-list"></div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="storage.js"></script>
+    
+</body>
+</html>

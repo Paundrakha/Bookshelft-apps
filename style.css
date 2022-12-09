@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head-book {
+    padding: 20px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: blue;
+}
+
+body {
+    background-image: url(img/Background.jpg);
+}
+
+body, input, button {
+    font-family: 'Serif', 'sans-serif';
+}
+
+input, button {
+    font-size: 18px;
+}
+
+main {
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.input-sesi {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border: 4px solid blue;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+.input-sesi > h2 {
+    text-align: center;
+}
+
+.input-sesi > form > .input {
+    margin: 8px 0;
+}
+
+.input-sesi > form > button {
+    border: 0;
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+    padding: 8px;
+    margin-top: 10%;
+    cursor: pointer;
+    background-color: chocolate;
+}
+
+
+.input-sesi > form > .input > input {
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+    padding: 6px;
+}
+
+.book-shelf {
+    margin: 30px 0 0 0;
+    border: 4px solid blue;
+    padding: 16px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+
+.book-shelf > h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book-shelf > .book-list > .book-item {
+    padding: 16px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.book-shelf > .book-list > .book-item > h3, p{
+    text-align: left;
+}
+
+.book-shelf > .book-list > .book-item > .action {
+    display: flex;
+    align-items: center;
+}
+
+.book-shelf > .book-list > .book-item > .action > button {
+    border: 0;
+    margin: 0 10px 0 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.detail-book {
+    padding: 5px;
+    align-items: center;
+    text-align: left;
+}
+
+.centang  {
+    background: url(img/check-solid.svg);
+    margin-left: auto;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-size: contain;
+}
+
+
+.sampah {
+    background: url(img/trash-solid.svg);
+    margin-left: auto;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+
+.undo {
+    background: url(img/rotate-left-solid.svg);
+    margin-left: auto;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+
